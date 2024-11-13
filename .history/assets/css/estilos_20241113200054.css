@@ -1,0 +1,130 @@
+/* ... (estilos anteriores) ... */
+
+/* Tablas de resultados específicas */
+.stats-table td.text-center {
+    text-align: center;
+}
+
+.salary {
+    text-align: right;
+    font-family: 'Consolas', monospace;
+    white-space: nowrap;
+}
+
+.percentage {
+    text-align: right;
+    font-weight: 500;
+}
+
+.percentage.warning {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Estadísticas */
+.stats-container {
+    overflow-x: auto;
+}
+
+.stats-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Salarios */
+.salary-table tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.salary-table .percentage::after {
+    content: ' sobre base';
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Mensajes */
+.message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    background-color: #e2e3e5;
+    border: 1px solid #d6d8db;
+    color: #383d41;
+}
+
+/* Contenedor de resultados */
+.results-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/* Resumen de departamento */
+.department-summary {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.department-summary h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.summary-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.stat-value {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Indicadores visuales */
+.trend-up::after {
+    content: '↑';
+    color: #28a745;
+    margin-left: 5px;
+}
+
+.trend-down::after {
+    content: '↓';
+    color: #dc3545;
+    margin-left: 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .stats-container {
+        margin: 0 -20px;
+    }
+    
+    .results-table {
+        font-size: 0.9em;
+    }
+    
+    .summary-stats {
+        flex-direction: column;
+    }
+    
+    .stat-item {
+        min-width: 100%;
+    }
+}
