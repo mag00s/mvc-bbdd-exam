@@ -1,0 +1,150 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Menú de consultas */
+.consultas-menu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.consultas-menu h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.consultas-menu ul {
+    list-style: none;
+}
+
+.consultas-menu li {
+    margin: 10px 0;
+}
+
+.consultas-menu a {
+    display: block;
+    padding: 15px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.consultas-menu a:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+/* Tabla de resultados */
+.results-table {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.results-table th,
+.results-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 500;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.results-table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Mensajes de error */
+.error-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Enlaces de navegación */
+.back-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: #34495e;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #666;
+}
